@@ -1,0 +1,153 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 850px) {
+    /* FONTS */
+    .cont_font {
+        font-size: 16px;
+        margin: 0;
+    }
+    .nav_font {
+        font-size: 18px;
+        text-decoration-line: none;
+    }
+
+    /* CONTAINERS */
+    #body {
+        display: grid;
+        grid-template-rows: 15% 85%;
+        justify-content: center;
+        align-self: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        width: auto;
+    }
+    /* NAVIGATION */
+    nav {
+        display: inline-block;
+        justify-self: center;
+    }
+    .nav_bar {
+        display: flex;
+        gap: 25px;
+        justify-self: center;
+        align-self: center;
+    }
+    nav img {
+        width: 120px;
+    }
+    /* MAIN */
+    main {
+        grid-template-columns: auto;
+        justify-self: center;
+        width: 100%;
+        row-gap: 10px;
+        margin-bottom: 40px;
+    }
+    .main_cont {
+        row-gap: 15px;
+        padding: 15px;
+        border-radius: 20px;
+        width: 50vw;
+        height: 20vw;
+    }
+
+    /* QUICK NOTES */
+    .quick_notes {
+        height: 150px;
+    }
+    .list {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        width: 100%;
+    }
+    .list li {
+        margin: 0;
+        cursor: pointer;
+        list-style: none;
+        text-align: justify;
+        position: relative;
+        padding: 5px 30px 5px 15px;
+        font-size: 12px;
+        transition: 0.2s;
+        width: auto;
+        word-wrap: break-word;
+        overflow: auto;
+        /* make the list items unselectable */
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+    .addBtn {
+        background: none;
+        color: #BEBBD4;
+        float: right;
+        text-align: center;
+        font-size: 16px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+    .todo_list {
+        display: grid;
+        grid-template-rows: 0.5fr 9.5fr;
+        height: 100%;
+        width: 100%;
+        box-sizing: border-box;
+        overflow: auto;
+        border-radius: 0 0 15px 15px;
+    }
+    .input_todo {
+        display: flex;
+        box-sizing: border-box;
+        padding: 15px 0 15px 15px;
+        margin: 0;
+        border: none;
+        border-radius: 0;
+        width: 90%;
+        float: left;
+        font-size: 12px;
+    }
+
+    /* FOCUS */
+    .focus {
+        display: grid;
+        justify-content: center;
+        padding: 0;
+        border-radius: 20px;
+        text-decoration: none;
+        outline: none;
+        height: 170px;
+    }
+    .main_timer {
+        align-self: center;
+ 
+    }
+    .timer_font {
+        font-size: 30px;
+    }
+
+    /* POMODOROS */
+    .pomodoros {
+        margin-left: auto;
+        margin-right: auto;
+        margin: 0;
+        height: 150px;
+    }
+    input[type=checkbox] {
+        width: 0.7em;
+        height: 0.7em;
+        border-radius: 3px;
+        margin: 4px;
+    }
+    .session_tracker {
+        box-sizing: border-box;
+        margin: 0;
+        width: 100%;
+        float: justify;
+        padding: 15px;
+        border-radius: 0 0 15px 15px;
+    } 
+}

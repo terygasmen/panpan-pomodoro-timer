@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Focus Timer | Panpan</title>
+    <link rel="icon" href="../STYLE GUIDE/library/panpan logo 3.png" type="image/icon type">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mobilecss.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@600&family=Inter:wght@300&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@700&family=Inter:wght@600&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@600&display=swap');
+    </style>
+</head>
+<body id="body">
+    <nav>
+        <div class="nav_logo"><a href="">
+            <img src="../STYLE GUIDE/library/logo.png" alt="Panpan Logo"></a>
+        </div>
+        <div class="nav_bar">
+            <button id="stop" class="main_font_bold nav_font btn">Stop</button>
+            <button id="reset" class="main_font_bold nav_font btn">Reset</button>
+        </div>
+        </div>
+    </nav>
+    <main>
+        <!--QUICK NOTES-->
+        <div class="main_cont quick_notes">
+            <p class="main_font_bold cont_font">Quick Notes</p>
+            <div id="myDIV" class="todo_list">
+                <label for="">
+                    <input type="text" id="myInput" class="input_todo secondary_font_bold" placeholder="add a to-do list">
+                    <span onclick="newElement()" id="enter" class="addBtn secondary_font_bold"></span>
+                </label>
+                <ul id="myUL" class="list secondary_font_bold"></ul>
+            </div>    
+        </div>
+        <!--FOCUS-->
+        <!--START AND STOP BUTTON-->
+        <button type="button" id="start" class="focus">
+            <!--CONTAINER FOR FOCUS TIMER-->
+            <div class="main_cont">
+                <!--LABEL-->
+                <p class="main_font_bold cont_font">Focus</p>
+                <!--CONTAINER FOR TIMER-->
+                <div class="main_timer">
+                    <div class="timer_cont">
+                        <!--FOCUS MINUTES-->
+                        <p id="focus_mins" class="secondary_font_bold timer_font focus_timer">25</p>
+                        <p class="semicolon secondary_font timer_font">:</p>
+                        <!--FOCUS SECONDS-->
+                        <p id="focus_secs" class="secondary_font timer_font focus_timer">0</p>
+                    </div>  
+                    <div class="timer_cont">
+                        <!--BREAK MINUTES-->
+                        <p id="break_mins" class="secondary_font_bold timer_font break_timer">5</p>
+                        <p class="semicolon secondary_font timer_font">:</p>
+                        <!--BREAK SECONDS-->
+                        <p id="break_secs" class="secondary_font timer_font break_timer">0</p>
+                    </div>
+                </div>  
+            </div>
+        </button>
+        <!--POMODOROS-->
+        <div class="main_cont main_font cont_font pomodoros">
+            <p class="main_font_bold cont_font">Pomodoros</p>
+            <div class="session_tracker">
+                <div id="counter" class="progress_tracker"></div>
+            </div>
+        </div>
+    </main>
+    <script src="timer.js"></script>
+    <script src="quicknotes.js"></script>
+</body>
+</html>
