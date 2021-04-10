@@ -86,4 +86,3 @@ function stopInterval(){
     clearInterval(startTimer);
 }
 
-
