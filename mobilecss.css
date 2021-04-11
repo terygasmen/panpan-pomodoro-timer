@@ -1,5 +1,5 @@
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 450px) {
     /* FONTS */
     .cont_font {
         font-size: 16px;
@@ -11,26 +11,28 @@
     }
 
     /* CONTAINERS */
-    body {
-        width: auto;
-    }
     /* NAVIGATION */
     nav {
         display: flex;
-        justify-content: center;
+        width: 100%;
+        position: fixed;
+        z-index: 2;
+        height: 60px;
     }
     .settings {
+        width: 100%;
         display: flex;
+        justify-content: center;
     }
 
     .__item {
         border-radius: 10px;
-        padding: 0 40px 30px 20px;
         font-size: 8px;
         border: 0;
-        height: 40px;
-        width: 40px;
         outline: none;
+        padding: 0;
+        padding-left: 10px;
+        padding-right: 10px;
     } .__item:hover {
         cursor: pointer;
     }
@@ -38,21 +40,20 @@
     /* MAIN */
     main {
         display: grid;
-        justify-self: center;
-        width: 100%;
         row-gap: 10px;
+        margin-top: 60px;
+        padding-bottom: 30px;
     }
     .main_cont {
         row-gap: 15px;
         padding: 15px;
         border-radius: 20px;
-        width: 50vw;
-        height: 20vw;
+        width: 60vw;
+        height: 40vw;
     }
 
     /* QUICK NOTES */
     .quick_notes {
-        height: 150px;
     }
     .list {
         margin: 0;
@@ -111,12 +112,10 @@
     /* FOCUS */
     .focus {
         display: grid;
-        justify-content: center;
         padding: 0;
         border-radius: 20px;
         text-decoration: none;
         outline: none;
-        height: 150px;
     }
     .timer_font {
         font-size: 30px;
@@ -127,7 +126,6 @@
         margin-left: auto;
         margin-right: auto;
         margin: 0;
-        height: 150px;
     }
     input[type=checkbox] {
         width: 0.7em;
@@ -142,5 +140,44 @@
         float: justify;
         padding: 15px;
         border-radius: 0 0 15px 15px;
+    }
+}
+
+@media only screen and (min-width: 450px) and (max-width: 700px){
+    main {
+        display: grid;
+        row-gap: 10px;
+        margin-top: 60px;
+        padding-bottom: 30px;
+    }
+    .main_cont {
+        row-gap: 15px;
+        padding: 15px;
+        border-radius: 20px;
+        width: 70vw;
+        height: 30vw;
+    }
+    nav {
+        display: flex;
+        width: 100%;
+        position: fixed;
+        z-index: 2;
+        height: 60px;
+    }
+    .settings {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .__item {
+        border-radius: 10px;
+        font-size: 8px;
+        border: 0;
+        outline: none;
+        padding: 0;
+        padding-left: 10px;
+        padding-right: 10px;
+    } .__item:hover {
+        cursor: pointer;
     }
 }
