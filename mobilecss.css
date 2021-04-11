@@ -11,39 +11,36 @@
     }
 
     /* CONTAINERS */
-    #body {
-        display: grid;
-        grid-template-rows: 15% 85%;
-        justify-content: center;
-        align-self: center;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        -ms-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
+    body {
         width: auto;
     }
     /* NAVIGATION */
     nav {
-        display: inline-block;
-        justify-self: center;
-    }
-    .nav_bar {
         display: flex;
-        gap: 25px;
-        justify-self: center;
-        align-self: center;
+        justify-content: center;
     }
-    nav img {
-        width: 120px;
+    .settings {
+        display: flex;
     }
+
+    .__item {
+        border-radius: 10px;
+        padding: 0 40px 30px 20px;
+        font-size: 8px;
+        border: 0;
+        height: 40px;
+        width: 40px;
+        outline: none;
+    } .__item:hover {
+        cursor: pointer;
+    }
+
     /* MAIN */
     main {
-        grid-template-columns: auto;
+        display: grid;
         justify-self: center;
         width: 100%;
         row-gap: 10px;
-        margin-bottom: 40px;
     }
     .main_cont {
         row-gap: 15px;
@@ -119,11 +116,7 @@
         border-radius: 20px;
         text-decoration: none;
         outline: none;
-        height: 170px;
-    }
-    .main_timer {
-        align-self: center;
- 
+        height: 150px;
     }
     .timer_font {
         font-size: 30px;
@@ -149,5 +142,5 @@
         float: justify;
         padding: 15px;
         border-radius: 0 0 15px 15px;
-    } 
+    }
 }
