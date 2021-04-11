@@ -15,25 +15,19 @@ function openFullscreen() {
   function darkmode() {
     if( $( "body" ).hasClass( "darkmode__enabled" )) {
       $( "body" ).removeClass( "darkmode__enabled" );
-      $( ".sidebar_cont" ).removeClass( "darkmode__enabled__two" );
-      $( ".closebtn" ).removeClass( "darkmode__enabled__two" );
-      $( ".title_cont" ).removeClass( "darkmode__enabled__two" );
-      $( ".decks_cont" ).removeClass( "darkmode__enabled__two" );
-      $( ".main_deck" ).removeClass( "darkmode__enabled__two" );
-      $( ".subdeck" ).removeClass( "darkmode__enabled__two" );
-      $( ".list" ).removeClass( "darkmode__enabled__two" );
-      $( ".title_input" ).removeClass( "darkmode__enabled__two" );
-      $( ".typing_area" ).removeClass( "darkmode__enabled" );
+      $( ".main_cont" ).removeClass( "darkmode__enabled__two" );
+      $( ".cont_font" ).removeClass( "darkmode__enabled__two" );
+      $( ".timer_font" ).removeClass( "darkmode__enabled__two" );
+      $( ".timer_cont" ).removeClass( "darkmode__enabled__two" );
+      $( ".main_timer" ).removeClass( "darkmode__enabled__two" );
+      $( "li" ).removeClass( "darkmode__enabled" );
     } else {
       $( "body" ).addClass( "darkmode__enabled" );
-      $( ".sidebar_cont" ).addClass( "darkmode__enabled__two" );
-      $( ".closebtn" ).addClass( "darkmode__enabled__two" );
-      $( ".title_cont" ).addClass( "darkmode__enabled__two" );
-      $( ".decks_cont" ).addClass( "darkmode__enabled__two" );
-      $( ".main_deck" ).addClass( "darkmode__enabled__two" );
-      $( ".subdeck" ).addClass( "darkmode__enabled__two" );
-      $( ".list" ).addClass( "darkmode__enabled__two" );
-      $( ".title_input" ).addClass( "darkmode__enabled__two" );
-      $( ".typing_area" ).addClass( "darkmode__enabled" );
+      $( ".main_cont" ).addClass( "darkmode__enabled__two" );
+      $( ".cont_font" ).addClass( "darkmode__enabled__two" );
+      $( ".timer_font" ).addClass( "darkmode__enabled__two" );
+      $( ".timer_cont" ).addClass( "darkmode__enabled__two" );
+      $( ".main_timer" ).addClass( "darkmode__enabled__two" );
+      $( "li" ).addClass( "darkmode__enabled" );
     }
   }

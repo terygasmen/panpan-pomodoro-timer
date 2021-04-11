@@ -15,12 +15,9 @@
         @import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@600&display=swap');
     </style>
 </head>
-<body id="body">
+<body id="body" class='color__mode'>
 
     <nav>
-        <!-- <div class="nav_logo"><a href="">
-            <img src="../STYLE GUIDE/library/logo.png" alt="Panpan Logo"></a>
-        </div> -->
         <div class="settings __page">
             <button id='fullScreen' class="__page __item darkmode" onclick="openFullscreen()"><i class="fa fa-expand fa-2x" aria-hidden="true"></i></button>
             <button class="__page __item darkmode darkmode__btn" onclick="darkmode()"><i class="fa fa-adjust fa-2x" aria-hidden="true"></i></button>
@@ -34,8 +31,8 @@
     <main>
         <!--QUICK NOTES-->
         <div class="main_cont quick_notes">
-            <p class="main_font_bold cont_font">Quick Notes</p>
-            <div id="myDIV" class="todo_list">
+            <p class="main_font_bold cont_font ">Quick Notes</p>
+            <div id="myDIV" class="todo_list ">
                 <label for="">
                     <input type="text" id="myInput" class="input_todo secondary_font_bold" placeholder="add a to-do list">
                     <span onclick="newElement()" id="enter" class="addBtn secondary_font_bold"></span>
