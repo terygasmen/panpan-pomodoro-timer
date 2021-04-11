@@ -25,7 +25,7 @@ start.addEventListener('click', function(){
 
 //RESET START TIMER FUNCTION CALLER
 reset.addEventListener('click', function(){
-    document.getElementById("body").style.backgroundColor = "#BEBBD4";
+    // document.getElementById("body").style.backgroundColor = "#BEBBD4";
     fm.innerText = "25";
     fs.innerText = 0;
 
