@@ -262,10 +262,10 @@ input[type=checkbox] {
     width: 100%;
     display: flex;
     justify-content: center;
+    background-color: #BEBBD4;
 }
 .__item {
-    border-radius: 10px;
-    font-size: 8px;
+    font-size: 10px;
     border: 0;
     outline: none;
     padding: 0;
@@ -277,10 +277,6 @@ input[type=checkbox] {
 
 .darkmode {
     background-color: #BEBBD4;
-    color: #FFFFFF;
-}
-
-i {
     color: #FFFFFF;
 }
 
