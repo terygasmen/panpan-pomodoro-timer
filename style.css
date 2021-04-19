@@ -48,6 +48,7 @@
 }
 .break_timer {
     color:#FFFFFF;
+    display: hidden;
 }
 .focus_timer {
     color:#FFFFFF;
@@ -198,7 +199,6 @@ label {
 /* FOCUS TIMER CONTAINER */
 .focus {
     background-color: #73708D;
-    background: rgb(115, 112, 141, 0.6);
     display: grid;
     justify-content: center;
     padding: 0;
@@ -223,6 +223,10 @@ label {
 }
 .main_timer {
     align-self: center;
+}
+
+.hideTimer {
+    display: none;
 }
 
 /* SESSION TRACKER */

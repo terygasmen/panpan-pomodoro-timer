@@ -1,3 +1,5 @@
+var num = document.getElementsByClassName('num');
+
 // BUTTONS
 var start = document.getElementById('start');
 var stop = document.getElementById('stop');
@@ -25,7 +27,10 @@ start.addEventListener('click', function(){
 
 //RESET START TIMER FUNCTION CALLER
 reset.addEventListener('click', function(){
-    // document.getElementById("body").style.backgroundColor = "#BEBBD4";
+    // Hide the break timer while focus timer is active
+    $( "#fcsTmr" ).removeClass( "hideTimer" );
+    $( "#brkTmr" ).addClass( "hideTimer" );
+
     fm.innerText = "25";
     fs.innerText = 0;
 
@@ -46,6 +51,11 @@ stop.addEventListener('click', function(){
 
 //START TIMER FUNCTION
 function timer(){
+
+    // Hide break timer while focus timer is active
+    $( "#fcsTmr" ).removeClass( "hideTimer" );
+    $( "#brkTmr" ).addClass( "hideTimer" );
+
     //Work Timer Countdown
     if(fs.innerText != 0){
         fs.innerText--;
@@ -56,7 +66,8 @@ function timer(){
 
     //Break Timer Countdown
     if(fm.innerText == 0 && fs.innerText == 0){
-        document.getElementById("body").style.backgroundColor = "#DDD5C5";
+        $( "#fcsTmr" ).addClass( "hideTimer" );
+        $( "#brkTmr" ).removeClass( "hideTimer" );
         if(bs.innerText != 0){
             bs.innerText--;
         } else if(bm.innerText != 0 && bs.innerText == 0){
@@ -64,20 +75,19 @@ function timer(){
             bm.innerText--;
         }
     }
-
-    //Increment Counter by one if one full cycle is completed
+    
+    //Increment Pomodors by one if one full cycle is completed
     if (fm.innerText == 0 && fs.innerText == 0 && bm.innerText == 0 && bs.innerText == 0){
-        //Change background color to violet
-        document.getElementById("body").style.backgroundColor = "#BEBBD4";
         // Reset timer
         fm.innerText = "25";
         fs.innerText = 0;
         bm.innerText = "5";
         bs.innerText = 0;
 
-        //document.getElementById('counter').innerHTML += '\uf0c8';
         var pomodoro = document.getElementById('counter');
         pomodoro.innerHTML += "<input type='checkbox'>";
+        $( "#fcsTmr" ).removeClass( "hideTimer" );
+        $( "#brkTmr" ).addClass( "hideTimer" );
     }
 }
 
@@ -85,4 +95,10 @@ function timer(){
 function stopInterval(){
     clearInterval(startTimer);
 }
+
+// function preprendZero(num) {
+//     if (num.innerText < 10) { num = "0" + num; }
+//     else { num = num.toString(); }
+//     return num;
+// }
 
