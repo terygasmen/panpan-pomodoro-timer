@@ -53,8 +53,7 @@
     }
 
     /* QUICK NOTES */
-    .quick_notes {
-    }
+    
     .list {
         margin: 0;
         padding: 0;
@@ -118,7 +117,7 @@
         outline: none;
     }
     .timer_font {
-        font-size: 30px;
+        font-size: 15vw;
     }
 
     /* POMODOROS */
@@ -164,6 +163,11 @@
         z-index: 2;
         height: 60px;
     }
+
+    .timer_font {
+        font-size: 15vw;
+    }
+
     .settings {
         width: 100%;
         display: flex;

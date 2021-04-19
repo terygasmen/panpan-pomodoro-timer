@@ -42,17 +42,11 @@
 
 /* TIMER FONTS */
 .timer_font {
-    font-size: 50px;
+    font-size: 5vw;
     color: #FFFFFF;
     margin: 0;
 }
-.break_timer {
-    color:#FFFFFF;
-    display: hidden;
-}
-.focus_timer {
-    color:#FFFFFF;
-}
+
 
 /* CONTAINERS */
 body {
