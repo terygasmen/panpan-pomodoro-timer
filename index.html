@@ -26,22 +26,12 @@
         </div>
     </nav>
     <main>
-        <!--QUICK NOTES-->
-        <div class="main_cont quick_notes">
-            <p class="main_font_bold cont_font ">Quick Notes</p>
-            <div id="myDIV" class="todo_list ">
-                <label for="">
-                    <input type="text" id="myInput" class="input_todo secondary_font_bold" placeholder="add a to-do list">
-                    <span onclick="newElement()" id="enter" class="addBtn secondary_font_bold"></span>
-                </label>
-                <ul id="myUL" class="list secondary_font_bold"></ul>
-            </div>    
-        </div>
+
         <!--FOCUS-->
         <!--START AND STOP BUTTON-->
         <button type="button" id="start" class="focus">
             <!--CONTAINER FOR FOCUS TIMER-->
-            <div id="fullscreen" class="main_cont">
+            <div id="fullscreen" class="focus_main_cont">
                 <!--LABEL-->
                 <p class="main_font_bold cont_font">Focus</p>
                 <!--CONTAINER FOR TIMER-->
@@ -63,11 +53,27 @@
                 </div>  
             </div>
         </button>
-        <!--POMODOROS-->
-        <div class="main_cont main_font cont_font pomodoros">
-            <p class="main_font_bold cont_font">Pomodoros</p>
-            <div class="session_tracker">
-                <div id="counter" class="progress_tracker"></div>
+
+        
+        <div class="main_cont_2">
+            <!--QUICK NOTES-->
+            <div class="main_cont quick_notes">
+                <p class="main_font_bold cont_font ">Quick Notes</p>
+                <div id="myDIV" class="todo_list ">
+                    <label for="">
+                        <input type="text" id="myInput" class="input_todo secondary_font_bold" placeholder="add a to-do list">
+                        <span onclick="newElement()" id="enter" class="addBtn secondary_font_bold"></span>
+                    </label>
+                    <ul id="myUL" class="list secondary_font_bold"></ul>
+                </div>    
+            </div>
+            
+            <!--POMODOROS-->
+            <div class="main_cont main_font cont_font pomodoros">
+                <p class="main_font_bold cont_font">Pomodoros</p>
+                <div class="session_tracker">
+                    <div id="counter" class="progress_tracker"></div>
+                </div>
             </div>
         </div>
 

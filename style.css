@@ -25,7 +25,7 @@
 
 /* CONTAINER LABEL FONT */
 .cont_font {
-    font-size: 25px;
+    font-size: 1.6vw;
     margin: 0;
 }
 
@@ -42,7 +42,7 @@
 
 /* TIMER FONTS */
 .timer_font {
-    font-size: 5vw;
+    font-size: 12vw;
     color: #FFFFFF;
     margin: 0;
 }
@@ -67,7 +67,7 @@ nav {
 /* MAIN CONTAINER */
 main {
     display: flex;
-    column-gap: 30px;
+    column-gap: 10px;
     justify-content: center;
     align-content: center;
     margin: 0;
@@ -85,7 +85,11 @@ main {
     border-radius: 20px;
     justify-items: center;
     width: 20vw;
-    height: 25vw;
+    height: 18vw;
+}
+.main_cont_2 {
+    display: grid;
+    row-gap: 10px;
 }
 
 /* QUICK NOTES CONTAINER */
@@ -191,6 +195,16 @@ label {
 }
 
 /* FOCUS TIMER CONTAINER */
+.focus_main_cont {
+    display: grid;
+    grid-template-rows: 10% 85%;
+    row-gap: 15px;
+    padding: 18px;
+    border-radius: 20px;
+    justify-items: center;
+    width: 40vw;
+    height: 35vw;
+}
 .focus {
     background-color: #73708D;
     display: grid;
@@ -204,7 +218,6 @@ label {
     box-sizing: border-box;
 }
 .focus:hover {
-    transform: scale(1.05);
     cursor: pointer;
 }
 .timer_cont {

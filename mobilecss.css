@@ -142,19 +142,30 @@
     }
 }
 
-@media only screen and (min-width: 450px) and (max-width: 700px){
+@media only screen and (min-width: 450px) and (max-width: 900px){
+    .cont_font {
+        font-size: 3vw;
+    }
     main {
         display: grid;
         row-gap: 10px;
-        margin-top: 60px;
+        margin-top: 6vw;
         padding-bottom: 30px;
     }
     .main_cont {
         row-gap: 15px;
         padding: 15px;
         border-radius: 20px;
-        width: 70vw;
+        width: 32vw;
         height: 30vw;
+    }
+    .focus_main_cont {
+        width: 60vw;
+        height: 50vw;
+    }
+    .main_cont_2 {
+        display: flex;
+        column-gap: 10px;
     }
     nav {
         display: flex;
@@ -163,7 +174,6 @@
         z-index: 2;
         height: 60px;
     }
-
     .timer_font {
         font-size: 15vw;
     }

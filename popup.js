@@ -16,6 +16,8 @@ function openFullscreen() {
     if( $( "body" ).hasClass( "darkmode__enabled" )) {
       $( "body" ).removeClass( "darkmode__enabled" );
       $( ".main_cont" ).removeClass( "darkmode__enabled__two" );
+      $( ".focus_main_cont" ).removeClass( "darkmode__enabled__two" );
+      $( ".focus" ).removeClass( "darkmode__enabled__two" );
       $( ".cont_font" ).removeClass( "darkmode__enabled__two" );
       $( ".timer_font" ).removeClass( "darkmode__enabled__two" );
       $( ".timer_cont" ).removeClass( "darkmode__enabled__two" );
@@ -24,6 +26,8 @@ function openFullscreen() {
     } else {
       $( "body" ).addClass( "darkmode__enabled" );
       $( ".main_cont" ).addClass( "darkmode__enabled__two" );
+      $( ".focus_main_cont" ).addClass( "darkmode__enabled__two" );
+      $( ".focus" ).addClass( "darkmode__enabled__two" );
       $( ".cont_font" ).addClass( "darkmode__enabled__two" );
       $( ".timer_font" ).addClass( "darkmode__enabled__two" );
       $( ".timer_cont" ).addClass( "darkmode__enabled__two" );
