@@ -63,6 +63,9 @@ nav {
     z-index: 2;
     height: 60px;
 }
+.settings {
+    background-color: #BEBBD4;
+}
 
 /* MAIN CONTAINER */
 main {

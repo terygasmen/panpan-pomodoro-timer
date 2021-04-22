@@ -15,6 +15,7 @@ function openFullscreen() {
   function darkmode() {
     if( $( "body" ).hasClass( "darkmode__enabled" )) {
       $( "body" ).removeClass( "darkmode__enabled" );
+      $( ".settings" ).removeClass( "darkmode__enabled" );
       $( ".main_cont" ).removeClass( "darkmode__enabled__two" );
       $( ".focus_main_cont" ).removeClass( "darkmode__enabled__two" );
       $( ".focus" ).removeClass( "darkmode__enabled__two" );
@@ -25,6 +26,7 @@ function openFullscreen() {
       $( "li" ).removeClass( "darkmode__enabled" );
     } else {
       $( "body" ).addClass( "darkmode__enabled" );
+      $( ".settings" ).addClass( "darkmode__enabled" );
       $( ".main_cont" ).addClass( "darkmode__enabled__two" );
       $( ".focus_main_cont" ).addClass( "darkmode__enabled__two" );
       $( ".focus" ).addClass( "darkmode__enabled__two" );
